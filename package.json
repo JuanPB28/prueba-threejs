@@ -1,0 +1,28 @@
+{
+  "name": "prueba-threejs",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "npm --prefix packages/frontend start",
+    "start:backend": "npm --prefix packages/backend start",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanPB28/prueba-threejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanPB28/prueba-threejs/issues"
+  },
+  "homepage": "https://github.com/JuanPB28/prueba-threejs#readme"
+}
